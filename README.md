@@ -204,6 +204,11 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
   frameborder="0">
 </iframe>
 
+
+
+ Summary:
+----------
+
  As you can see, the distribution is skewed to theright. Some recipes have unimaginable calorie content, but these are very few. The vast majority of calories are in the 200-1000 calorie range.
  
 
@@ -214,6 +219,10 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
   height="600"
   frameborder="0">
 </iframe>
+
+
+ Summary:
+----------
 
  From this average rating distribution map, most of the ratings are concentrated near the position of 5 points, especially the number of 5 points is far more than other ratings, which indicates that the overall satisfaction of users is high, or there is a phenomenon of high ratings. Low ratings, such as below 2, are relatively rare, indicating that very few users give extremely low scores. This distribution may reflect the influence of rating bias or scoring mechanism. In addition, there were small spikes in certain scores such as 4 and 3. It is recommended to further analyze the time trend of review content or ratings to gain a deeper understanding of user feedback and optimize the rating mechanism to more accurately reflect the user experience.
  
@@ -231,6 +240,10 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
   frameborder="0">
 </iframe>
 
+
+ Summary:
+----------
+
  Observation results: Most recipes are low in calories, concentrated in the O to 10,000 range. A large number of ratings are concentrated between 4 and 5 points. As the score approached 5, some recipes appeared that were very high in calories (over 20,000 calories). Recipes with low ratings (near 0 to 1) usually have lower calorie values. Conclusion: Highly rated recipes are sometimes accompanied by extremely high calorie content. Low-rated recipes are rarely seen in the high-calorie range, which may indicate that people are less receptive to low-rated, high-calorie recipes. The scatter plot shows that recipes with scores above 4 are mainstream, but the calorie distribution is very wide.
  
 
@@ -241,6 +254,10 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
   height="600"
   frameborder="0">
 </iframe>
+
+
+ Summary:
+----------
 
  Observation results: The recipes were divided into four calorie levels: Low [0-400), Medium [400-700), High[700-1000), and Very High [1000 +). The distribution of scores for each calorie category wasconcentrated in the higher rating range, with most scores around 4 points. The median scores for eachcalorie category were very close, with little difference in scores. Across all calorie levels, there were somelow-scoring outliers. Conclusion: The relationship between calorie content and ratings did not appear tobe significant, and the distribution of ratings for recipes with different calorie levels was relativelyconsistent. Both low - and high-calorie recipes are likely to receive high ratings, suggesting that ratingsmay depend more on other aspects of the recipe (e.g. taste, ingredients, cooking methods. etc.).
  

@@ -197,7 +197,12 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
 =====================
 
 
-![](images/calories_dis.png)
+<iframe
+  src="assets/calories_dis.html"
+  width="800"
+  height="600"
+  frameborder="0">
+</iframe>
 
  As you can see, the distribution is skewed to theright. Some recipes have unimaginable calorie content, but these are very few. The vast majority of calories are in the 200-500 calorie range.
  

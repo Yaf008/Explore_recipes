@@ -208,7 +208,12 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
  
 
 
-![](images/averagerating_dis.png)
+<iframe
+  src="assets/avgrating_dis.html"
+  width="800"
+  height="600"
+  frameborder="0">
+</iframe>
 
  From this average rating distribution map, most of the ratings are concentrated near the position of 5 points, especially the number of 5 points is far more than other ratings, which indicates that the overall satisfaction of users is high, or there is a phenomenon of high ratings. Low ratings, such as below 2, are relatively rare, indicating that very few users give extremely low scores. This distribution may reflect the influence of rating bias or scoring mechanism. In addition, there were small spikes in certain scores such as 4 and 3. It is recommended to further analyze the time trend of review content or ratings to gain a deeper understanding of user feedback and optimize the rating mechanism to more accurately reflect the user experience.
  
@@ -219,13 +224,23 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
 ====================
 
 
-![](images/Avgrating_Ca.png)
+<iframe
+  src="assets/avgrating_calories.html"
+  width="800"
+  height="600"
+  frameborder="0">
+</iframe>
 
  Observation results: Most recipes are low in calories, concentrated in the O to 10,000 range. A large number of ratings are concentrated between 4 and 5 points. As the score approached 5, some recipes appeared that were very high in calories (over 20,000 calories). Recipes with low ratings (near 0 to 1) usually have lower calorie values. Conclusion: Highly rated recipes are sometimes accompanied by extremely high calorie content. Low-rated recipes are rarely seen in the high-calorie range, which may indicate that people are less receptive to low-rated, high-calorie recipes. The scatter plot shows that recipes with scores above 4 are mainstream, but the calorie distribution is very wide.
  
 
 
-![](images/rate_ca_box.png)
+<iframe
+  src="assets/avgrating_calories_box.html"
+  width="800"
+  height="600"
+  frameborder="0">
+</iframe>
 
  Observation results: The recipes were divided into four calorie levels: Low [0-400), Medium [400-700), High[700-1000), and Very High [1000 +). The distribution of scores for each calorie category wasconcentrated in the higher rating range, with most scores around 4 points. The median scores for eachcalorie category were very close, with little difference in scores. Across all calorie levels, there were somelow-scoring outliers. Conclusion: The relationship between calorie content and ratings did not appear tobe significant, and the distribution of ratings for recipes with different calorie levels was relativelyconsistent. Both low - and high-calorie recipes are likely to receive high ratings, suggesting that ratingsmay depend more on other aspects of the recipe (e.g. taste, ingredients, cooking methods. etc.).
  
@@ -241,7 +256,13 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
  
 
 
-![](images/cook_duration.png)
+<iframe
+  src="assets/avgrating_minutes.html"
+  width="800"
+  height="600"
+  frameborder="0">
+</iframe>
+
 
 
 
@@ -304,9 +325,14 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
 
  Permutation Test Visualization:
 ---------------------------------
+<iframe
+  src="assets/rating_minutes.html"
+  width="800"
+  height="600"
+  frameborder="0">
+</iframe>
 
 
-![](images/AMD_rating_cooktine.png)
 
  Hypothesis Test Result
 ========================
@@ -380,7 +406,15 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
 ---------------------------------
 
 
-![Permutation Test Visualization for Saturated Fat](images/AMD_rating_fat.png)
+<iframe
+  src="assets/rating_fat.html"
+  width="800"
+  height="600"
+  frameborder="0">
+</iframe>
+
+
+
 
  Hypothesis Test Result
 ========================
@@ -496,7 +530,12 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
 -----------------------------
 
 
-![Scatter Plot of Calories vs Average Rating](images/correaltion.png)
+<iframe
+  src="assets/calories_vs_rating.html"
+  width="800"
+  height="600"
+  frameborder="0">
+</iframe>
 
 
 
@@ -778,5 +817,12 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
  
 
 
-![Permutation Test RMSE Visualization](images/fairness.png)
+
+<iframe
+  src="assets/permutation_test.html"
+  width="800"
+  height="600"
+  frameborder="0">
+</iframe>
+
 

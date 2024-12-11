@@ -29,73 +29,20 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
 
 
 
-| 
- Column
-  | 
- Description
-  |
-| --- | --- |
-| 
- 'name'
-  | 
- Recipe name
-  |
-| 
- 'id'
-  | 
- Recipe ID
-  |
-| 
- 'minutes'
-  | 
- Minutes to prepare recipe
-  |
-| 
- 'contributor\_id'
-  | 
- User ID who submitted this recipe
-  |
-| 
- 'submitted'
-  | 
- Date recipe was submitted
-  |
-| 
- 'tags'
-  | 
- Food.com tags for recipe
-  |
-| 
- 'nutrition'
-  | 
- Nutrition information in the form [calories (#), total fat (PDV), sugar (PDV), sodium (PDV), protein (PDV), saturated fat (PDV), carbohydrates (PDV)]; PDV stands for "percentage of daily value"
-  |
-| 
- 'n\_steps'
-  | 
- Number of steps in recipe
-  |
-| 
- 'steps'
-  | 
- Text for recipe steps, in order
-  |
-| 
- 'description'
-  | 
- User-provided description
-  |
-| 
- 'ingredients'
-  | 
- Text for recipe ingredients
-  |
-| 
- 'n\_ingredients'
-  | 
- Number of ingredients in recipe
-  |
-
+| **Column**         | **Description**                                                                                                                                           |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `'name'`           | Recipe name                                                                                                                                               |
+| `'id'`             | Recipe ID                                                                                                                                                |
+| `'minutes'`        | Minutes to prepare recipe                                                                                                                                |
+| `'contributor_id'` | User ID who submitted this recipe                                                                                                                        |
+| `'submitted'`      | Date recipe was submitted                                                                                                                                |
+| `'tags'`           | Food.com tags for recipe                                                                                                                                 |
+| `'nutrition'`      | Nutrition information in the form [calories (#), total fat (PDV), sugar (PDV), sodium (PDV), protein (PDV), saturated fat (PDV), carbohydrates (PDV)]; PDV stands for "percentage of daily value" |
+| `'n_steps'`        | Number of steps in recipe                                                                                                                                |
+| `'steps'`          | Text for recipe steps, in order                                                                                                                         |
+| `'description'`    | User-provided description                                                                                                                                |
+| `'ingredients'`    | Text for recipe ingredients                                                                                                                              |
+| `'n_ingredients'`  | Number of ingredients in recipe   
 
 
  The second dataset, interactions, contains 731927 rows and each row contains a review from the user on a specific recipe. The columns it includes are:
@@ -103,28 +50,13 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
 
 
 
-
-| 
- Column
-  | 
- Description
-  |
-| --- | --- |
-| `'user_id'`  | 
- User ID
-  |
-| `'recipe_id'`  | 
- Recipe ID
-  |
-| `'date'`  | 
- Date of interaction
-  |
-| `'rating'`  | 
- Rating given
-  |
-| `'review'`  | 
- Review text
-  |
+| **Column**         | **Description**           |
+|--------------------|---------------------------|
+| `'user_id'`       | User ID                   |
+| `'recipe_id'`     | Recipe ID                 |
+| `'date'`          | Date of interaction       |
+| `'rating'`        | Rating given              |
+| `'review'`        | Review text               |
 
 
 #### 
@@ -198,173 +130,41 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
 
 
 
- Columns of the Cleaned DataFrame
-==================================
+ # Columns of the Cleaned DataFrame
 
-
-
-
-| 
- Column
-  | 
- Description
-  |
-| --- | --- |
-| 
- 'name'
-  | 
- object
-  |
-| 
- 'id'
-  | 
- int64
-  |
-| 
- 'minutes'
-  | 
- int64
-  |
-| 
- 'contributor\_id'
-  | 
- int64r
-  |
-| 
- 'submitted'
-  | 
- DateTime
-  |
-| 
- 'tags'
-  | 
- object
-  |
-| 
- 'n\_steps'
-  | 
- int64r
-  |
-| 
- 'steps'
-  | 
- object
-  |
-| 
- 'description'
-  | 
- object
-  |
-| 
- 'ingredients'
-  | 
- object
-  |
-| 
- 'n\_ingredients'
-  | 
- int64
-  |
-| 
- 'user\_id'
-  | 
- float64
-  |
-| 
- 'recipe\_id'
-  | 
- int64
-  |
-| 
- 'date'
-  | 
- DateTime
-  |
-| 
- 'rating'
-  | 
- float64
-  |
-| 
- 'review'
-  | 
- object
-  |
-| 
- 'average rating'
-  | 
- float64
-  |
-| 
- 'calories'
-  | 
- float64
-  |
-| 
- 'total\_fat'
-  | 
- float64
-  |
-| 
- 'sugar'
-  | 
- float64
-  |
-| 
- 'sodium'
-  | 
- float64
-  |
-| 
- 'protein'
-  | 
- float64
-  |
-| 
- 'saturated\_fat'
-  | 
- float64
-  |
-| 
- 'carbohydrates'
-  | 
- float64
-  |
-| 
- 'calorie\_bins'
-  | 
- object
-  |
-| 
- 'rating\_missing'
-  | 
- bool
-  |
-| 
- 'cooking\_duration\_long'
-  | 
- bool
-  |
-| 
- 'cooking\_duration\_medium'
-  | 
- bool
-  |
-| 
- 'cooking\_duration\_short'
-  | 
- bool
-  |
-| 
- 'cooking\_duration'
-  | 
- object
-  |
-| 
- 'cooking\_duration\_encoded'
-  | 
- int64
-  |
+| **Column**                    | **Description** |
+|-------------------------------|-----------------|
+| `'name'`                      | object          |
+| `'id'`                        | int64           |
+| `'minutes'`                   | int64           |
+| `'contributor_id'`            | int64r          |
+| `'submitted'`                 | DateTime        |
+| `'tags'`                      | object          |
+| `'n_steps'`                   | int64r          |
+| `'steps'`                     | object          |
+| `'description'`               | object          |
+| `'ingredients'`               | object          |
+| `'n_ingredients'`             | int64           |
+| `'user_id'`                   | float64         |
+| `'recipe_id'`                 | int64           |
+| `'date'`                      | DateTime        |
+| `'rating'`                    | float64         |
+| `'review'`                    | object          |
+| `'average rating'`            | float64         |
+| `'calories'`                  | float64         |
+| `'total_fat'`                 | float64         |
+| `'sugar'`                     | float64         |
+| `'sodium'`                    | float64         |
+| `'protein'`                   | float64         |
+| `'saturated_fat'`             | float64         |
+| `'carbohydrates'`             | float64         |
+| `'calorie_bins'`              | object          |
+| `'rating_missing'`            | bool            |
+| `'cooking_duration_long'`     | bool            |
+| `'cooking_duration_medium'`   | bool            |
+| `'cooking_duration_short'`    | bool            |
+| `'cooking_duration'`          | object          |
+| `'cooking_duration_encoded'`  | int64           |
 
 
 
@@ -372,35 +172,6 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
 
 
 
- Cleaned DataFrame Table
- 
-
- body {
- font-family: Arial, sans-serif;
- margin: 20px;
- }
- .table-container {
- width: 100%;
- overflow-x: auto; /* 添加水平滚动 */
- border: 1px solid #ddd;
- border-radius: 5px;
- }
- table {
- border-collapse: collapse;
- width: 100%;
- white-space: nowrap; /* 防止内容换行 */
- }
- th, td {
- border: 1px solid #ddd;
- padding: 8px;
- text-align: left;
- }
- th {
- background-color: #f4f4f4;
- }
- tr:nth-child(even) {
- background-color: #f9f9f9;
- }
  
 
 
@@ -411,213 +182,12 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
 
 
 
-
-| 
- name
-  | 
- id
-  | 
- minutes
-  | 
- contributor\_id
-  | 
- submitted
-  | 
- tags
-  | 
- n\_steps
-  | 
- steps
-  | 
- description
-  | 
- ingredients
-  | 
- protein
-  | 
- saturated\_fat
-  | 
- carbohydrates
-  | 
- calorie\_bins
-  | 
- rating\_missing
-  | 
- cooking\_duration\_long
-  | 
- cooking\_duration\_medium
-  | 
- cooking\_duration\_short
-  | 
- cooking\_duration
-  | 
- cooking\_duration\_encoded
-  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 
- impossible macaroni and cheese pie
-  | 
- 275022
-  | 
- 50
-  | 
- 531768
-  | 
- 2008-01-01
-  | 
- ['60-minutes-or-less', 'time-to-make', 'course...']
-  | 
- 11
-  | 
- ['heat oven to 400 degrees fahrenheit', 'greas...']
-  | 
- one of my mom's favorite bisquick recipes...
-  | 
- ['cheddar cheese', 'macaroni', 'milk', 'eggs',...]
-  | 
- 41.0
-  | 
- 62.0
-  | 
- 8.0
-  | 
- Low[0,400)
-  | 
- False
-  | 
- False
-  | 
- True
-  | 
- False
-  | 
- medium
-  | 
- 1
-  |
-| 
- impossible macaroni and cheese pie
-  | 
- 275022
-  | 
- 50
-  | 
- 531768
-  | 
- 2008-01-01
-  | 
- ['60-minutes-or-less', 'time-to-make', 'course...']
-  | 
- 11
-  | 
- ['heat oven to 400 degrees fahrenheit', 'greas...']
-  | 
- one of my mom's favorite bisquick recipes...
-  | 
- ['cheddar cheese', 'macaroni', 'milk', 'eggs',...]
-  | 
- 41.0
-  | 
- 62.0
-  | 
- 8.0
-  | 
- Low[0,400)
-  | 
- False
-  | 
- False
-  | 
- True
-  | 
- False
-  | 
- medium
-  | 
- 1
-  |
-| 
- impossible rhubarb pie
-  | 
- 275024
-  | 
- 55
-  | 
- 531768
-  | 
- 2008-01-01
-  | 
- ['60-minutes-or-less', 'time-to-make', 'course...']
-  | 
- 6
-  | 
- ['heat oven to 375 degrees', 'grease 10" pan ,...']
-  | 
- a childhood favorite of mine. my mom loved it...
-  | 
- ['rhubarb', 'eggs', 'bisquick', 'butter', 'sal...']
-  | 
- 13.0
-  | 
- 30.0
-  | 
- 20.0
-  | 
- Low[0,400)
-  | 
- False
-  | 
- False
-  | 
- True
-  | 
- False
-  | 
- medium
-  | 
- 1
-  |
-| 
- impossible seafood pie
-  | 
- 275026
-  | 
- 45
-  | 
- 531768
-  | 
- 2008-01-01
-  | 
- ['60-minutes-or-less', 'time-to-make', 'course...']
-  | 
- 7
-  | 
- ['preheat oven to 400f', 'lightly grease large...']
-  | 
- this is an oldie but a goodie. mom's stand by...
-  | 
- ['frozen crabmeat', 'sharp cheddar cheese', 'c...']
-  | 
- 37.0
-  | 
- 51.0
-  | 
- 5.0
-  | 
- Low[0,400)
-  | 
- False
-  | 
- False
-  | 
- True
-  | 
- False
-  | 
- medium
-  | 
- 1
-  |
+| **name**                        | **id**  | **minutes** | **contributor_id** | **submitted** | **tags**                                      | **n_steps** | **steps**                                  | **description**                               | **ingredients**                               | **protein** | **saturated_fat** | **carbohydrates** | **calorie_bins** | **rating_missing** | **cooking_duration_long** | **cooking_duration_medium** | **cooking_duration_short** | **cooking_duration** | **cooking_duration_encoded** |
+|---------------------------------|---------|-------------|--------------------|---------------|----------------------------------------------|-------------|--------------------------------------------|----------------------------------------------|----------------------------------------------|-------------|-------------------|------------------|------------------|-------------------|---------------------------|----------------------------|----------------------------|--------------------|------------------------------|
+| impossible macaroni and cheese pie | 275022  | 50          | 531768             | 2008-01-01    | ['60-minutes-or-less', 'time-to-make', 'course...'] | 11          | ['heat oven to 400 degrees fahrenheit', 'greas...'] | one of my mom's favorite bisquick recipes... | ['cheddar cheese', 'macaroni', 'milk', 'eggs',...] | 41.0        | 62.0              | 8.0              | Low[0,400)       | False             | False                     | True                       | False                      | medium             | 1                            |
+| impossible macaroni and cheese pie | 275022  | 50          | 531768             | 2008-01-01    | ['60-minutes-or-less', 'time-to-make', 'course...'] | 11          | ['heat oven to 400 degrees fahrenheit', 'greas...'] | one of my mom's favorite bisquick recipes... | ['cheddar cheese', 'macaroni', 'milk', 'eggs',...] | 41.0        | 62.0              | 8.0              | Low[0,400)       | False             | False                     | True                       | False                      | medium             | 1                            |
+| impossible rhubarb pie          | 275024  | 55          | 531768             | 2008-01-01    | ['60-minutes-or-less', 'time-to-make', 'course...'] | 6           | ['heat oven to 375 degrees', 'grease 10\" pan ,...'] | a childhood favorite of mine. my mom loved it... | ['rhubarb', 'eggs', 'bisquick', 'butter', 'sal...'] | 13.0        | 30.0              | 20.0             | Low[0,400)       | False             | False                     | True                       | False                      | medium             | 1                            |
+| impossible seafood pie          | 275026  | 45          | 531768             | 2008-01-01    | ['60-minutes-or-less', 'time-to-make', 'course...'] | 7           | ['preheat oven to 400f', 'lightly grease large...'] | this is an oldie but a goodie. mom's stand by... | ['frozen crabmeat', 'sharp cheddar cheese', 'c...'] | 37.0        | 51.0              | 5.0              | Low[0,400)       | False             | False                     | True                       | False                      | medium             | 1                            |
 
 
 

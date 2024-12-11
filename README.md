@@ -204,7 +204,7 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
   frameborder="0">
 </iframe>
 
- As you can see, the distribution is skewed to theright. Some recipes have unimaginable calorie content, but these are very few. The vast majority of calories are in the 200-500 calorie range.
+ As you can see, the distribution is skewed to theright. Some recipes have unimaginable calorie content, but these are very few. The vast majority of calories are in the 200-1000 calorie range.
  
 
 
@@ -264,6 +264,12 @@ The first dataset recipe contains 83782 rows representing 83782 unique recipes, 
 </iframe>
 
 
+
+ Summary:
+----------
+As the cooking time increased, the average calorie also showed an upward trend.
+
+Recipes cooked for a long time tend to have more calories than recipes cooked for a short time.
 
 
 
